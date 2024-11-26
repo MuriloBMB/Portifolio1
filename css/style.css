@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./img/2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    height: 100vh; 
+  }
+  /* Configuraçao da sombra */
+  .sombra {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 0;
+    
+  }
+  /* Configuraçao da navbar */
+  .navbar-custom {
+    background-color: #212529;
+  }
+  .navbar-brand img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    border: 1px solid white; 
+    
+  }
+  .navbar li {
+      margin: 0 15px;
+  }
+  
+  .footer-icon {
+    color: whitesmoke;
+    margin: 0 20px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    border: none;                
+    outline: none;    
+  }
+  
