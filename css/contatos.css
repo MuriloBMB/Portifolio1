@@ -40,3 +40,19 @@
 a {
     text-decoration: none;  /* Remover o sublinhado dos links */
 }
+
+@media (max-width: 768px) {
+    .topicos{
+        font-size: 1.6em;
+    }
+    .card{
+        width: 90%;
+        margin: 5%;
+        
+    }
+    .card-icons{
+        width: 50%;
+        padding: 15%;
+
+    }
+}
