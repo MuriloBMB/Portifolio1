@@ -56,3 +56,18 @@ a {
 
     }
 }
+@media (max-width: 576px) {
+    .topicos{
+        font-size: 1.0em;
+    }
+    .card{
+        width: 80%;
+        margin: 2%;
+        
+    }
+    .card-icons{
+        width: 40%;
+        padding: 9%;
+
+    }
+}

@@ -1,0 +1,24 @@
+.mb-3{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 35px;
+    color: whitesmoke;
+    
+}
+.enviar{
+    text-align: right;
+    padding-bottom: 10%;
+    padding-right: 10%;
+}
+.enviar button {
+    font-size: 20px;      /* Aumenta o tamanho da fonte */
+    padding: 15px 25px;   /* Aumenta o padding interno para um botão maior */
+    width: auto;          
+}
+
+@media (max-width: 768px){
+    .topicos{
+        font-size: 1.6em;
+    }
+    
+}

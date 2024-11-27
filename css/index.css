@@ -28,13 +28,7 @@
   transform: translateY(-10px);
   opacity: 1;
 }
-.topicos {
-  color: whitesmoke;
-  text-align: center;
-  padding-top: 15%;
-  margin-bottom: 5%;
-  font-size: 40px; /* Tamanho da fonte */
-}
+
 /* carousel */
 .carousel-inner {
   position: relative;
@@ -154,6 +148,7 @@
   }
 
   .card {
+    
       width: 45%; /* Menor largura dos cards em dispositivos menores */
       margin: 5%;
       
