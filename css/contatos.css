@@ -3,27 +3,27 @@
     text-align: center;
     padding-top: 15%;
     margin-bottom: 5%;
-    font-size: 40px; /* Tamanho da fonte */
-  }
-  
+    font-size: 40px;
+}
+
 .contatos {
     padding: 10%;
     display: flex;
-    flex-wrap: wrap;        
-    gap: 90px;               
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .card {
     padding: 0px;
-    width: 25%;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
     opacity: 0.7;
     transition: opacity 0.3s ease, transform 0.3s ease;
     text-align: center;
     cursor: pointer;
+    width: 30%;  /* Para telas grandes (3 cards) */
 }
 
 .card:hover {
@@ -33,43 +33,47 @@
 
 .card-icons {
     font-size: 60px;
-    margin-bottom: 10px;  
-    color: black;  /* Definindo a cor dos ícones para preto */
+    margin-bottom: 10px;
+    color: black;
 }
 
 a {
-    text-decoration: none;  /* Remover o sublinhado dos links */
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {
-    .topicos{
-        font-size: 2em;
+    .topicos {
+        font-size: 2.5em;
     }
-    .card{
-        font-size: 0.9em;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        padding: 0px;
-       
+    .card {
+        width: 45%;  /* Para tablets, dois cards lado a lado */
     }
-    .card-icons{
-        font-size: 40;
-
+    .card-icons {
+        font-size: 50px;
     }
 }
+
 @media (max-width: 768px) {
-    .topicos{
+    .topicos {
+        font-size: 2em;
+    }
+    .card {
+        width: 45%;  /* Para telas médias, dois cards lado a lado */
+    }
+    .card-icons {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topicos {
         font-size: 1.6em;
+        padding-top: 10%;
     }
-    .card{
-        font-size: 0.9em;
-        margin-left: auto;
-        width: 35%;
-        padding: 0px;
-        
+    .card {
+        width: 90%;  /* Para celulares, um card por linha */
     }
-    .card-icons{
+    .card-icons {
         font-size: 30px;
     }
 }

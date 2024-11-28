@@ -9,42 +9,49 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .texto h1, .texto h3 {
   color: rgb(0, 0, 0);
   font-family: 'Arial', sans-serif;
   text-align: center;
   margin: 10px 0;
 }
+
 .texto h1 {
   font-size: 2.5em;
   font-weight: 700;
 }
+
 .texto h3 {
   font-size: 1.5em;
   font-weight: 400;
   color: rgb(100, 100, 100);
 }
+
 .texto:hover {
   transform: translateY(-10px);
   opacity: 1;
 }
 
-/* carousel */
+/* Carousel */
 .carousel-inner {
   position: relative;
   overflow: hidden; 
 }
+
 .carousel-item {
   display: flex;
   justify-content: center; 
   align-items: center; 
 }
+
 .carousel-img {
   object-fit: contain; 
   height: 500px; 
   max-width: 100%; 
   transition: transform 0.5s ease-in-out;
 }
+
 .carousel h3 {
   background-color: whitesmoke; 
   border-radius: 20px;
@@ -56,16 +63,20 @@
   line-height: 1.5; 
   opacity: 0.65;
 }
+
 .carousel h3:hover {
   opacity: 1;
 }
+
 .carousel-indicators button {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0%;
 }
+
 .carousel-indicators .active {
   background-color: rgb(0, 0, 0); 
 }
+
 .carousel-control-prev, .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -76,11 +87,13 @@
   color: rgb(0, 0, 0);
   transform: translateY(950%);
 }
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: white;
   border-radius: 50%;
 }
- /* cards */
+
+/* Cards */
 .skills {
   padding: 10%;
   display: flex;
@@ -88,9 +101,10 @@
   gap: 20px;              
   justify-content: space-between; 
 }
+
 .card {
   padding: 10px;
-  width: 25%;
+  width: 30%;  /* 3 cards por linha em telas grandes */
   box-sizing: border-box;
   border-radius: 20px;    
   overflow: hidden;
@@ -99,116 +113,170 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
   align-items: center;
 }
+
 .card:hover {
   transform: translateY(-10px);
   opacity: 1;
 }
+
 .card img {
   width: 50%;
   height: auto;
 }
-.card h5{
+
+.card h5 {
   text-align: center;
 }
 
+/* Ajustes para telas médias (máximo 1024px) */
+@media screen and (max-width: 1024px) {
 
-
-@media screen and  (max-width: 1024px) {
-  
   .texto h1 {
     font-size: 2em;
-}
-.texto h3 {
+  }
+
+  .texto h3 {
     font-size: 1em;
-}
+  }
 
-
-.texto {
+  .texto {
     padding: auto;
     margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.carousel-img {
+  .carousel-img {
     height: 300px; 
-}
+  }
 
-.carousel h3 {
+  .carousel h3 {
     font-size: 1em;
     padding: 10px;
-}
-.carousel-control-prev, .carousel-control-next{
-  width: 40px; 
-  height: 15px; 
-  padding: 10px; 
-  margin: -20px;
-}
-/* Ajusta o layout dos cards */
-.skills {
-    padding: 5%;
-}
+  }
 
-.card {
+  .carousel-control-prev, .carousel-control-next {
+    width: 40px; 
+    height: 15px; 
+    padding: 10px; 
+    margin: -20px;
+  }
+
+  .skills {
+    padding: 5%;
+  }
+
+  .card {
     font-size: 0.9em;
     margin-left: auto;
-    width: 28%;
+    width: 30%;  /* Dois cards por linha em telas médias */
     padding: 0px;
-    
-}
+  }
 
-.card img {
+  .card img {
     width: 60%; /* Imagem maior nos cards */
     padding: 15%;
   }
 }
 
-
+/* Ajustes para telas pequenas (máximo 768px) */
 @media screen and (max-width: 768px) {
-  
+
   .texto h1 {
     font-size: 1.6em;
-}
-.texto h3 {
+  }
+
+  .texto h3 {
     font-size: 1em;
-}
-.texto {
+  }
+
+  .texto {
     padding: auto;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.carousel-img {
+  .carousel-img {
     height: 200px; 
-}
+  }
 
-.carousel h3 {
+  .carousel h3 {
     font-size: 1em;
     padding: 10px;
-}
-.carousel-control-prev, .carousel-control-next{
-  width: 40px; 
-  height: 15px; 
-  padding: 10px; 
-  margin: -20px;
-}
-/* Ajusta o layout dos cards */
-.skills {
-    padding: 5%;
-}
+  }
 
-.card {
+  .carousel-control-prev, .carousel-control-next {
+    width: 40px; 
+    height: 15px; 
+    padding: 10px; 
+    margin: -20px;
+  }
+
+  .skills {
+    padding: 5%;
+  }
+
+  .card {
     font-size: 0.7em;
     margin-left: auto;
-    margin-left: auto;
-    width: 40%;
+    width: 45%;  /* Dois cards por linha em telas menores */
     padding: 0px;
-    
+  }
+
+  .card img {
+    width: 60%; /* Imagem maior nos cards */
+    padding: 15%;
+  }
 }
 
-.card img {
-    width: 60%; /* Imagem maior nos cards */
+/* Ajustes para celulares (máximo 480px) */
+@media screen and (max-width: 480px) {
+
+  .texto h1 {
+    font-size: 1.4em;
+  }
+
+  .texto h3 {
+    font-size: 1em;
+  }
+
+  .texto {
+    padding: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-img {
+    height: 150px; 
+  }
+
+  .carousel h3 {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 40px; 
+    height: 15px; 
+    padding: 10px; 
+    margin: -20px;
+  }
+
+  .skills {
+    padding: 5%;
+  }
+
+  .card {
+    font-size: 0.7em;
+    margin-left: auto;
+    width: 90%;  /* Um card por linha em celulares */
+    padding: 0px;
+  }
+
+  .card img {
+    width: 70%; /* Imagem maior nos cards */
     padding: 15%;
   }
 }
