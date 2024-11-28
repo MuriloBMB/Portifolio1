@@ -5,14 +5,17 @@
     color: whitesmoke;
     
 }
+.mb-3 text{
+    padding: 20%;
+}
 .enviar{
     text-align: right;
     padding-bottom: 10%;
     padding-right: 10%;
 }
 .enviar button {
-    font-size: 20px;      /* Aumenta o tamanho da fonte */
-    padding: 15px 25px;   /* Aumenta o padding interno para um botão maior */
+    font-size: 20px;      
+    padding: 15px 25px;   
     width: auto;          
 }
 
@@ -24,8 +27,8 @@
         font-size: 1.1em;
     }
     .enviar button {
-        font-size: 20px;      /* Aumenta o tamanho da fonte */
-        padding: 5px 10px;   /* Aumenta o padding interno para um botão maior */
+        font-size: 20px;      
+        padding: 5px 10px;   
         width: auto;          
     }
     

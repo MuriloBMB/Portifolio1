@@ -104,7 +104,7 @@
 
 .card {
   padding: 10px;
-  width: 30%;  /* 3 cards por linha em telas grandes */
+  width: 30%;  
   box-sizing: border-box;
   border-radius: 20px;    
   overflow: hidden;
@@ -128,7 +128,6 @@
   text-align: center;
 }
 
-/* Ajustes para telas médias (máximo 1024px) */
 @media screen and (max-width: 1024px) {
 
   .texto h1 {
@@ -139,47 +138,35 @@
     font-size: 1em;
   }
 
-  .texto {
-    padding: auto;
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .carousel-img {
-    height: 300px; 
+    height: 300px; /* tamanho da img */
   }
 
   .carousel h3 {
     font-size: 1em;
     padding: 10px;
   }
-
+  /* posição do botõao para passar a pagina */
   .carousel-control-prev, .carousel-control-next {
-    width: 40px; 
     height: 15px; 
     padding: 10px; 
-    margin: -20px;
+    margin: -10px;
   }
 
-  .skills {
-    padding: 5%;
-  }
-
+  /* tamanho dos cards */
   .card {
     font-size: 0.9em;
-    margin-left: auto;
-    width: 30%;  /* Dois cards por linha em telas médias */
-    padding: 0px;
+    width: 30%; /* largura dos cards */
+    
   }
-
+  
   .card img {
-    width: 60%; /* Imagem maior nos cards */
+    width: 60%; /* largura das img*/
     padding: 15%;
   }
 }
 
-/* Ajustes para telas pequenas (máximo 768px) */
+
 @media screen and (max-width: 768px) {
 
   .texto h1 {
@@ -189,48 +176,37 @@
   .texto h3 {
     font-size: 1em;
   }
-
-  .texto {
-    padding: auto;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+ 
   .carousel-img {
-    height: 200px; 
+    height: 200px;  /* tamanho da img */
   }
 
   .carousel h3 {
     font-size: 1em;
     padding: 10px;
   }
-
+ /* possiçoes dos botoes pra passar */
   .carousel-control-prev, .carousel-control-next {
-    width: 40px; 
     height: 15px; 
     padding: 10px; 
-    margin: -20px;
+    margin: -15px;
   }
 
-  .skills {
-    padding: 5%;
-  }
-
+   /* tamanho dos cards*/
   .card {
     font-size: 0.7em;
     margin-left: auto;
-    width: 45%;  /* Dois cards por linha em telas menores */
-    padding: 0px;
+    width: 45%;  /* largura dos cards*/
+    
   }
-
+ 
   .card img {
-    width: 60%; /* Imagem maior nos cards */
+    width: 60%; /* largura das img*/
     padding: 15%;
   }
 }
 
-/* Ajustes para celulares (máximo 480px) */
+
 @media screen and (max-width: 480px) {
 
   .texto h1 {
@@ -239,13 +215,6 @@
 
   .texto h3 {
     font-size: 1em;
-  }
-
-  .texto {
-    padding: auto;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .carousel-img {
@@ -258,25 +227,19 @@
   }
 
   .carousel-control-prev, .carousel-control-next {
-    width: 40px; 
     height: 15px; 
     padding: 10px; 
-    margin: -20px;
-  }
-
-  .skills {
-    padding: 5%;
+    margin: -10px;
   }
 
   .card {
-    font-size: 0.7em;
-    margin-left: auto;
-    width: 90%;  /* Um card por linha em celulares */
-    padding: 0px;
+    font-size: 0.7em; 
+    width: 90%; /* largura dos cards*/
+    
   }
 
   .card img {
-    width: 70%; /* Imagem maior nos cards */
+    width: 70%; /* largura das img*/
     padding: 15%;
   }
 }
