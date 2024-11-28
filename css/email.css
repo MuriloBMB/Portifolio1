@@ -23,5 +23,10 @@
     .mb-3{
         font-size: 1.1em;
     }
+    .enviar button {
+        font-size: 20px;      /* Aumenta o tamanho da fonte */
+        padding: 5px 10px;   /* Aumenta o padding interno para um botão maior */
+        width: auto;          
+    }
     
 }

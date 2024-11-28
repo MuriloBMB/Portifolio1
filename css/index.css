@@ -111,82 +111,104 @@
   text-align: center;
 }
 
-/* Responsividade: Ajustes para telas menores */
 
-/* Para telas pequenas (menores que 768px) */
-@media (max-width: 768px) {
-  /* Ajusta o título principal */
+
+@media screen and  (max-width: 1024px) {
+  
   .texto h1 {
-      font-size: 1.6em;
-  }
-  .texto h3 {
-      font-size: 1.0em;
-  }
+    font-size: 2em;
+}
+.texto h3 {
+    font-size: 1em;
+}
 
-  /* Ajusta o padding do texto */
-  .texto {
-      padding: 20px;
-      margin-top: 20%;
-  }
-  .topicos{
-    font-size: 1.6;
-  }
 
-  /* Ajuste no carousel */
-  .carousel-img {
-      height: 300px; /* Menor altura em dispositivos móveis */
-  }
+.texto {
+    padding: auto;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .carousel h3 {
-      font-size: 1em;
-      padding: 20px;
-  }
+.carousel-img {
+    height: 300px; 
+}
 
-  /* Ajusta o layout dos cards */
-  .skills {
-      padding: 5%;
-  }
+.carousel h3 {
+    font-size: 1em;
+    padding: 10px;
+}
+.carousel-control-prev, .carousel-control-next{
+  width: 40px; 
+  height: 15px; 
+  padding: 10px; 
+  margin: -20px;
+}
+/* Ajusta o layout dos cards */
+.skills {
+    padding: 5%;
+}
 
-  .card {
+.card {
+    font-size: 0.9em;
+    margin-left: auto;
+    width: 28%;
+    padding: 0px;
     
-      width: 45%; /* Menor largura dos cards em dispositivos menores */
-      margin: 5%;
-      
-  }
+}
 
-  .card img {
-      width: 70%; /* Imagem maior nos cards */
-      padding: 15%;
+.card img {
+    width: 60%; /* Imagem maior nos cards */
+    padding: 15%;
   }
 }
 
-/* Para telas muito pequenas (menores que 576px) */
-@media (max-width: 576px) {
-  /* Ajusta o título principal */
 
+@media screen and (max-width: 768px) {
+  
   .texto h1 {
-      font-size: 1.5em;
-  }
-  .texto h3 {
-      font-size: 1em;
-  }
+    font-size: 1.6em;
+}
+.texto h3 {
+    font-size: 1em;
+}
+.texto {
+    padding: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  /* Ajuste no carrossel */
-  .carousel-img {
-      height: 250px; /* Altura ainda menor em telas muito pequenas */
-  }
+.carousel-img {
+    height: 200px; 
+}
 
-  .carousel h3 {
-      font-size: 0.9em;
-      padding: 15px;
-  }
+.carousel h3 {
+    font-size: 1em;
+    padding: 10px;
+}
+.carousel-control-prev, .carousel-control-next{
+  width: 40px; 
+  height: 15px; 
+  padding: 10px; 
+  margin: -20px;
+}
+/* Ajusta o layout dos cards */
+.skills {
+    padding: 5%;
+}
 
-  /* Ajusta a largura dos cards */
-  .card {
-      width: 90%; /* Cards ocupam quase toda a tela */
-  }
+.card {
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-left: auto;
+    width: 40%;
+    padding: 0px;
+    
+}
 
-  .card img {
-      width: 80%; /* Imagens maiores para ocuparem o espaço disponível */
+.card img {
+    width: 60%; /* Imagem maior nos cards */
+    padding: 15%;
   }
 }

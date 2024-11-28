@@ -15,7 +15,7 @@
 }
 
 .card {
-    padding: 15px;
+    padding: 0px;
     width: 25%;
     border-radius: 20px;
     overflow: hidden;
@@ -41,33 +41,35 @@ a {
     text-decoration: none;  /* Remover o sublinhado dos links */
 }
 
+@media (max-width: 1024px) {
+    .topicos{
+        font-size: 2em;
+    }
+    .card{
+        font-size: 0.9em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        padding: 0px;
+       
+    }
+    .card-icons{
+        font-size: 40;
+
+    }
+}
 @media (max-width: 768px) {
     .topicos{
         font-size: 1.6em;
     }
     .card{
-        width: 90%;
-        margin: 5%;
+        font-size: 0.9em;
+        margin-left: auto;
+        width: 35%;
+        padding: 0px;
         
     }
     .card-icons{
-        width: 50%;
-        padding: 15%;
-
-    }
-}
-@media (max-width: 576px) {
-    .topicos{
-        font-size: 1.0em;
-    }
-    .card{
-        width: 80%;
-        margin: 2%;
-        
-    }
-    .card-icons{
-        width: 40%;
-        padding: 9%;
-
+        font-size: 30px;
     }
 }
